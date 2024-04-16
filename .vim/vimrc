@@ -181,6 +181,15 @@ hi CocErrorHighlight ctermfg=red guifg=#c4384b gui=underline cterm=underline
 hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=underline term=underline
 " hi CocInfoHighlight ctermfg=yellow guifg=#c4ab39 gui=underline term=underline
 
+let g:coc_global_extensions = [
+      \'coc-spell-checker',
+      \'coc-snippets',
+      \'coc-prettier',
+      \'coc-eslint',
+      \'coc-tsserver',
+      \'coc-json',
+      \]
+
 nnoremap F :GFiles<CR>
 
 nnoremap <nowait><silent> <leader>p :Format<CR>
